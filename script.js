@@ -68,7 +68,7 @@
 
 
 
-var head =  document.getElementById("head")
+// var head =  document.getElementById("head")
 
 
 // access class list
@@ -86,8 +86,33 @@ var head =  document.getElementById("head")
 
 // manipulate attributes
 
-var link = document.getElementById("go")
+// var link = document.getElementById("go")
 // console.log(link.attributes.href)
 
 // set attribute
-link.setAttribute("href","https://www.yahoo.com")
+// link.setAttribute("href","https://www.yahoo.com")
+
+
+
+// add event listener
+
+
+var head =  document.getElementById("head")
+
+
+// anonymous function
+// head.addEventListener("click", function(){
+//     head.innerText = "bye bye world"
+//     alert("hello world i got clicked")
+// })
+
+
+// => arrow function
+// head.addEventListener("click", ()=>{
+//     head.innerText = "bye bye world"
+//     alert("hello world i got clicked")
+// })
+head.addEventListener("mouseout", ()=>{
+    head.innerText = "bye bye world"
+    alert("hello world i got clicked")
+})
